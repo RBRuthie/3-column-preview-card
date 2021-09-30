@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+
+}
+
+/* container for each section */
+.sedans-left__container,
+.suvs-middle__container,
+.luxery-right__container {
+  /* padding: 20px; */
+  padding: 20px 37px;
+  text-align: left;
+  width: 305px;
+  height: 550px;
+}
+
+/* background colors */
+.sedans-left__container{
+  background: #e28525; 
+}
+.suvs-middle__container{
+  background: #016972; 
+}
+.luxery-right__container{
+  background: #00403f; 
+}
+
+
+/* images */
+.sedans-left__image,
+.suvs-middle__image,
+.luxery-right__image{
+ margin-top: 40px;
+}
+
+/*  title */
+.sedans-left__title,
+.suvs-middle__title,
+.luxery-right__title{
+  margin-top: 40px;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 40px;
+  font-style: cursive;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* info */
+.sedans-left__text,
+.suvs-middle__text,
+.luxery-right__text{
+  width: 200px;
+  margin-top: 40px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #ffffff;
+  /* use for opacity of the color:border-radius: The hsla() functional notation expresses a given color according to its hue, saturation, and lightness components. An optional alpha component represents the color's transparency.;  */
+  color: hsla(1,1%,100%,.75);
+}
+
+
+/* button */
+.sedans-left__button,
+.suvs-middle__button,
+.luxery-right__button{
+margin-top: 80px;
+}
+.sedans-left__btn,
+.suvs-middle__btn,
+.luxery-right__btn{
+padding: 12px 30px;
+border-radius: 26px;
+font-size: 20px;
+text-decoration: none;
+background-color: #ffffff;
+}
+
+
+.sedans-left__btn{
+  color: #e28525;
+}
+.suvs-middle__btn{
+  color: #016972;
+}
+.luxery-right__btn{
+  color: #00403f;
+}
+
+
+
+
+@media screen and (max-width: 940px) {
+  .main-container
+  {
+      flex-direction: column;
+      position: relative;
+      top: 8px;
+      margin-bottom: 16px;
+  }
+}
